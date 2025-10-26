@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SneakerZone - Tu tienda de zapatillas favorita">
+    <title>SneakerZone - Casa de Zapatillas</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shoe-prints"></i>
+                <h1>SneakerZone</h1>
+            </div>
+            <div class="header-info">
+                <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> info@sneakerzone.com</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#productos"><i class="fas fa-shopping-bag"></i> Productos</a></li>
+                <li><a href="#sobre-nosotros"><i class="fas fa-users"></i> Sobre Nosotros</a></li>
+                <li><a href="#reseñas"><i class="fas fa-star"></i> Reseñas</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Sección Hero/Inicio -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenidos a SneakerZone</h2>
+                <p>Las mejores zapatillas, los mejores precios</p>
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=400&fit=crop" alt="Zapatilla destacada">
+            </div>
+        </section>
+
+        <!-- Sección Productos con FLEXBOX -->
+        <section id="productos" class="productos">
+            <div class="container">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <div class="productos-grid">
+                    <!-- Producto 1 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Nike Air Max">
+                            <span class="badge">Nuevo</span>
+                        </div>
+                        <div class="producto-info">
+                            <h3>Nike Air Max 90</h3>
+                            <p class="categoria">Running</p>
+                            <p class="descripcion">Zapatillas deportivas con tecnología Air Max para máxima comodidad.</p>
+                            <div class="precio-container">
+                                <span class="precio">$45.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=300&fit=crop" alt="Adidas Ultraboost">
+                            <span class="badge oferta">-20%</span>
+                        </div>
+                        <div class="producto-info">
+                            <h3>Adidas Ultraboost</h3>
+                            <p class="categoria">Running</p>
+                            <p class="descripcion">Tecnología Boost para un retorno de energía infinito.</p>
+                            <div class="precio-container">
+                                <span class="precio">$52.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop" alt="Puma RS-X">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Puma RS-X</h3>
+                            <p class="categoria">Lifestyle</p>
+                            <p class="descripcion">Estilo retro con tecnología moderna para el día a día.</p>
+                            <div class="precio-container">
+                                <span class="precio">$38.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400&h=300&fit=crop" alt="New Balance 574">
+                            <span class="badge">Bestseller</span>
+                        </div>
+                        <div class="producto-info">
+                            <h3>New Balance 574</h3>
+                            <p class="categoria">Casual</p>
+                            <p class="descripcion">El clásico que nunca pasa de moda. Comodidad garantizada.</p>
+                            <div class="precio-container">
+                                <span class="precio">$41.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=300&fit=crop" alt="Vans Old Skool">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Vans Old Skool</h3>
+                            <p class="categoria">Skateboarding</p>
+                            <p class="descripcion">El ícono del skateboarding con estilo atemporal.</p>
+                            <div class="precio-container">
+                                <span class="precio">$32.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop" alt="Converse Chuck Taylor">
+                            <span class="badge oferta">-15%</span>
+                        </div>
+                        <div class="producto-info">
+                            <h3>Converse All Star</h3>
+                            <p class="categoria">Casual</p>
+                            <p class="descripcion">Las clásicas Chuck Taylor que combinan con todo.</p>
+                            <div class="precio-container">
+                                <span class="precio">$28.000</span>
+                                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre SneakerZone</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Tu tienda de confianza desde 2010</h3>
+                        <p>En SneakerZone nos apasiona el mundo del calzado deportivo. Ofrecemos las mejores marcas y modelos del mercado, garantizando calidad y autenticidad en cada producto.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Productos 100% originales</li>
+                            <li><i class="fas fa-check"></i> Envío gratis en compras superiores a $50.000</li>
+                            <li><i class="fas fa-check"></i> Garantía de satisfacción</li>
+                            <li><i class="fas fa-check"></i> Atención personalizada</li>
+                        </ul>
+                    </div>
+                    <div class="about-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas con GRID -->
+        <section id="reseñas" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <div class="reviews-grid">
+                    <!-- Reseña 1 -->
+                    <div class="review-card featured">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excelente atención y productos de primera calidad. Compré unas Nike Air Max y llegaron en perfectas condiciones. ¡100% recomendable!"</p>
+                        <div class="reviewer">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>María González</h4>
+                                <span>Cliente verificado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 2 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Los mejores precios del mercado y envío súper rápido. Ya compré 3 pares!"</p>
+                        <div class="reviewer">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Carlos Rodríguez</h4>
+                                <span>Cliente frecuente</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 3 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="review-text">"Gran variedad de modelos y tallas. El personal me ayudó a elegir las zapatillas perfectas."</p>
+                        <div class="reviewer">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Laura Martínez</h4>
+                                <span>Cliente verificado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 4 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Productos originales garantizados. La mejor tienda de zapatillas online."</p>
+                        <div class="reviewer">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Diego López</h4>
+                                <span>Cliente nuevo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 5 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excelente experiencia de compra. Proceso simple y seguro."</p>
+                        <div class="reviewer">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Ana Silva</h4>
+                                <span>Cliente verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto con FORMULARIO -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Corrientes 1234, CABA, Argentina</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+54 11 1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@sneakerzone.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario</h4>
+                                <p>Lun - Vie: 9:00 - 19:00<br>Sáb: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario con Formspree -->
+                    <div class="contact-form">
+                        <h3>Envíanos un mensaje</h3>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                        <p class="form-note">* Campos obligatorios. Nota: Debes reemplazar YOUR_FORM_ID con tu ID de Formspree.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SneakerZone</h3>
+                    <p>Tu tienda de zapatillas de confianza. Calidad, estilo y los mejores precios del mercado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Skateboarding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit"><i class="fas fa-envelope"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SneakerZone. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para menú móvil -->
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
